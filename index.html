@@ -2,41 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrill Camps - Adventure Base Camp</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thrill Camps - Adventure Base Camp</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    
-<header>
-    <img src="logo.png" alt="Thrill Camps Logo" class="logo">
+  <header class="main-header">
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="tour-packages.html">Tour Packages</a>
-        <a href="investor.html">Investors</a>
-        <a href="contact.html">Contact</a>
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Thrill Camps</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tour.html">Tour Packages</a></li>
+          <li><a href="investor.html">Invest</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
+  </header>
 
-    <section class="hero">
-        <div class="overlay">
-            <h2>ADVENTURE BASE CAMP</h2>
-            <h1>Ride. Camp. Explore. Repeat.</h1>
-            <div class="buttons">
-                <a href="tour-packages.html" class="btn">View Packages</a>
-                <a href="contact.html" class="btn">Book a Tour</a>
-                <a href="investor.html" class="btn">Invest With Us</a>
-            </div>
+  <section class="hero-banner">
+    <img src="assets/img/hero_campsite.jpg" alt="Thrill Camps Hero" style="width:100%; height:auto;" />
+    <div class="hero-overlay">
+      <h1>EXPLORE THE WORLD</h1>
+      <p>Experience unforgettable adventures with us</p>
+      <a href="tour.html" class="btn-orange">Tour Packages</a>
+      <a href="contact.html" class="btn-outline">Book Now</a>
+    </div>
+  </section>
+
+  <section class="featured-tours">
+    <div class="container">
+      <h2>Popular Tours</h2>
+      <div class="tour-grid">
+        <div class="tour-card">
+          <img src="assets/img/tour_susegado.jpg" alt="Tour Susegado" />
+          <h3>Tour Susegado</h3>
+          <p>₹12,000</p>
         </div>
-    </section>
-    
-<footer>
-    <a href="https://instagram.com/thrillcamps" target="_blank" title="Instagram">📷 Instagram</a>
-    <a href="https://wa.me/918369445976" target="_blank" title="WhatsApp">📞 WhatsApp</a>
-    <p>&copy; 2024 Thrill Camps</p>
-</footer>
+        <div class="tour-card">
+          <img src="assets/img/tour_ladakh.jpg" alt="Ladakh Altitude Escape" />
+          <h3>Ladakh Altitude Escape</h3>
+          <p>₹40,000</p>
+        </div>
+        <div class="tour-card">
+          <img src="assets/img/tour_ghats.jpg" alt="Western Ghats Trail" />
+          <h3>Western Ghats Monsoon Trail</h3>
+          <p>₹10,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <div class="container footer-content">
+      <p>Contact: Kartik Deshpande | kartik@thrillcamps.com | WhatsApp: 8369445976</p>
+      <p>&copy; 2024 Thrill Camps</p>
+    </div>
+  </footer>
 </body>
 </html>
