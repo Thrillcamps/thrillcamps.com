@@ -2,34 +2,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Thrill Camps</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Thrill Camps</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('assets/img/about_bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fefefe;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.6); /* dark overlay */
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-section img {
+      height: 40px;
+    }
+
+    .brand-name {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    ul {
+      color: #eee;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .footer-icons img {
+      width: 28px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+
 <header>
-    <img src="logo.png" alt="Thrill Camps Logo" class="logo">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="tour-packages.html">Tour Packages</a>
-        <a href="investor.html">Investors</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <div class="logo-section">
+    <a href="index.html"><img src="assets/img/logo.png" alt="Thrill Camps Logo" /></a>
+  </div>
+  <div class="brand-name">Thrill Camps</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tour.html">Tour Packages</a></li>
+    <li><a href="investor.html">Invest</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </header>
 
-    <section class="tours">
-        <h1>About Thrill Camps</h1>
-        <p>Thrill Camps is an adventure travel brand born out of pure passion for the road, the mountains, and the spirit of exploration. We curate unique motorbike tours designed to bring together riders, explorers, and storytellers.</p>
-        <p>From the monsoon-drenched ghats of Maharashtra to the high-altitude serenity of Ladakh, our rides blend adventure with comfort, community, and authentic local experiences. We’re not just a tour — we’re your travel tribe.</p>
-    </section>
-    
+<main>
+  <h1>About Thrill Camps 🏕️</h1>
+  <h2>Fuelled by Passion. Driven by Adventure. Built for Riders.</h2>
+  <p>Thrill Camps was born on the winding roads and rugged trails of India — not in a boardroom.</p>
+  <p>In 2017, our founder, Kartik Deshpande, a corporate sales professional by the week and a restless explorer by the weekend, started organizing weekend escapes for bikers, trekkers, and adventure lovers. It wasn’t about profits — it was about passion. What began as small camping trips quickly grew into a close-knit community of like-minded thrill-seekers chasing sunrises, starry skies, and soul-fueling rides.</p>
+  <p>But life took a detour.</p>
+  <p>As Kartik focused on building a corporate career (Zomato, Paytm, Fynd), Thrill Camps took a backseat. Yet the itch to ride, to build, and to create unforgettable experiences never left. And now, we're back — reimagined, refueled, and rebuilt for a new era of riders and adventurers.</p>
+
+  <h2>Our Vision 🎯</h2>
+  <p>To become India’s most trusted riding and adventure community, offering curated bike tours, rugged offbeat trails, and soul-stirring experiences for the everyday explorer — from weekend warriors to lifelong nomads.</p>
+  <p>We’re not a travel company. We’re a movement. A brotherhood on two wheels. A tribe that finds joy in the journey — not just the destination.</p>
+
+  <h2>Meet the Founder 👋</h2>
+  <p><strong>Kartik Deshpande | Rider. Storyteller. Sales Guy Turned Trail Guy.</strong></p>
+  <p>With over a decade of experience in scaling startups and managing high-performance sales teams, Kartik brings structure to chaos and heart to business. But beyond the suits and spreadsheets, he’s a Triumph Scrambler rider with over 10,000 km of road behind him — and countless stories ahead.</p>
+  <p>His role at Thrill Camps is to lead from the saddle:</p>
+  <ul>
+    <li>Designing routes that challenge and heal</li>
+    <li>Building a genuine, no-fluff biker community</li>
+    <li>Ensuring every ride is safe, soulful, and unforgettable</li>
+  </ul>
+
+  <h2>Why Join Us?</h2>
+  <p>Because you weren’t made to just work and exist. You were made to ride, to roam, to live fully. And at Thrill Camps, we ride together. Always.</p>
+</main>
+
 <footer>
-    <a href="https://instagram.com/thrillcamps" target="_blank" title="Instagram">📷 Instagram</a>
-    <a href="https://wa.me/918369445976" target="_blank" title="WhatsApp">📞 WhatsApp</a>
-    <p>&copy; 2024 Thrill Camps</p>
+  <p>Contact: kartik@thrillcamps.com | WhatsApp: 8369445976</p>
+  <div class="footer-icons">
+    <a href="https://instagram.com/thrillcamps" target="_blank"><img src="assets/img/instagram.png" alt="Instagram" /></a>
+    <a href="mailto:kartik@thrillcamps.com"><img src="assets/img/email.png" alt="Email" /></a>
+    <a href="https://wa.me/918369445976" target="_blank"><img src="assets/img/whatsapp.png" alt="WhatsApp" /></a>
+  </div>
+  <p>&copy; 2017 Thrill Camps</p>
 </footer>
 
 </body>
