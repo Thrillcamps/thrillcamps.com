@@ -1,72 +1,52 @@
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+.tours {
+    padding: 40px;
     background-color: #111;
     color: white;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: #000;
-}
-.logo {
-    height: 50px;
-}
-nav a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
-}
-.hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    position: relative;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
-.overlay h2 {
-    font-size: 24px;
-    color: #FFA500;
-    margin: 0;
+.tour-card {
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #1a1a1a;
 }
-.overlay h1 {
-    font-size: 48px;
-    margin: 20px 0;
+.tour-card h2 {
+    margin-top: 0;
+    color: #ffa500;
 }
-.buttons {
-    margin-top: 20px;
-}
-.btn {
-    background-color: #FFA500;
-    color: #000;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-}
-footer a {
-    color: white;
-    margin: 0 10px;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .logo {
+        height: 40px;
+    }
+    .overlay h1 {
+        font-size: 28px;
+    }
+    .overlay h2 {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .tour-card {
+        margin: 10px;
+        padding: 15px;
+    }
+    .form-container {
+        padding: 20px;
+    }
 }
