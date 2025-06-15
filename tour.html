@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Packages - Thrill Camps</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-section img {
+      height: 40px;
+    }
+
+    .brand-name {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tour-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .tour-card {
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .tour-card:hover {
+      transform: scale(1.03);
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .tour-content {
+      padding: 15px;
+    }
+
+    .tour-content h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+
+    .tour-content p {
+      margin: 5px 0;
+    }
+
+    .tour-content a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .footer-icons img {
+      width: 28px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-section">
+    <a href="index.html"><img src="assets/img/logo.png" alt="Thrill Camps Logo" /></a>
+  </div>
+  <div class="brand-name">Thrill Camps</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="tour.html">Tour Packages</a></li>
+    <li><a href="investor.html">Invest</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<main>
+  <section class="tour-container">
+
+    <div class="tour-card">
+      <img src="assets/img/tour_susegado.jpg" alt="Tour Susegado" />
+      <div class="tour-content">
+        <p style="font-size: 0.95em; line-height: 1.4;">
+          
+Tour Susegado: A relaxed 6-day coastal ride from Mumbai to Goa. Curated beachside stays, scenic pitstops, and group bonding. Ideal for solo riders and couples looking to unwind and ride free.
+
+Ladakh Altitude Escape: Conquer the Himalayas with a high-altitude adventure across Ladakh. Choose from 3 ride plans including bike shipping, cross-valley routes, and mountain passes. Breathtaking, challenging, unforgettable.
+
+Western Ghats Monsoon Trail: A lush monsoon ride through Karnataka and Maharashtra’s Ghats. Expect green valleys, hilltop homestays, misty curves, and authentic food stops — designed for offbeat exploration lovers.
+
+        </p>
+        <h3>Tour Susegado</h3>
+        <p>₹12,000</p>
+        <p>June 27 – July 1, 2025</p>
+        <a href="https://airtable.com/appN4Bx9C0g6mYDyN/pagXuOfbkBRC84VNn/form" target="_blank">Book Now</a>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="assets/img/tour_ladakh.jpg" alt="Ladakh Altitude Escape" />
+      <div class="tour-content">
+        <p style="font-size: 0.95em; line-height: 1.4;">
+          
+Tour Susegado: A relaxed 6-day coastal ride from Mumbai to Goa. Curated beachside stays, scenic pitstops, and group bonding. Ideal for solo riders and couples looking to unwind and ride free.
+
+Ladakh Altitude Escape: Conquer the Himalayas with a high-altitude adventure across Ladakh. Choose from 3 ride plans including bike shipping, cross-valley routes, and mountain passes. Breathtaking, challenging, unforgettable.
+
+Western Ghats Monsoon Trail: A lush monsoon ride through Karnataka and Maharashtra’s Ghats. Expect green valleys, hilltop homestays, misty curves, and authentic food stops — designed for offbeat exploration lovers.
+
+        </p>
+        <h3>Ladakh Altitude Escape</h3>
+        <p>₹42,000</p>
+        <p>Dates: TBD</p>
+        <a href="https://airtable.com/appN4Bx9C0g6mYDyN/pagXuOfbkBRC84VNn/form" target="_blank">Book Now</a>
+      </div>
+    </div>
+
+    <div class="tour-card">
+      <img src="assets/img/tour_ghats.jpg" alt="Western Ghats Monsoon Trail" />
+      <div class="tour-content">
+        <p style="font-size: 0.95em; line-height: 1.4;">
+          
+Tour Susegado: A relaxed 6-day coastal ride from Mumbai to Goa. Curated beachside stays, scenic pitstops, and group bonding. Ideal for solo riders and couples looking to unwind and ride free.
+
+Ladakh Altitude Escape: Conquer the Himalayas with a high-altitude adventure across Ladakh. Choose from 3 ride plans including bike shipping, cross-valley routes, and mountain passes. Breathtaking, challenging, unforgettable.
+
+Western Ghats Monsoon Trail: A lush monsoon ride through Karnataka and Maharashtra’s Ghats. Expect green valleys, hilltop homestays, misty curves, and authentic food stops — designed for offbeat exploration lovers.
+
+        </p>
+        <h3>Western Ghats Monsoon Trail</h3>
+        <p>₹12,000</p>
+        <p>Dates: TBD</p>
+        <a href="https://airtable.com/appN4Bx9C0g6mYDyN/pagXuOfbkBRC84VNn/form" target="_blank">Book Now</a>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>Contact: kartik@thrillcamps.com | WhatsApp: 8369445976</p>
+  <div class="footer-icons">
+    <a href="https://instagram.com/thrillcamps" target="_blank"><img src="assets/img/instagram.png" alt="Instagram" /></a>
+    <a href="mailto:kartik@thrillcamps.com"><img src="assets/img/email.png" alt="Email" /></a>
+    <a href="https://wa.me/918369445976" target="_blank"><img src="assets/img/whatsapp.png" alt="WhatsApp" /></a>
+  </div>
+  <p>&copy; 2017 Thrill Camps</p>
+</footer>
+
+</body>
+</html>
