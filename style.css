@@ -1,72 +1,150 @@
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: white;
+/* RESET + BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.logo {
-    height: 50px;
+header img {
+  height: 50px;
 }
-nav a {
-    margin-left: 20px;
-    color: white;
-    text-decoration: none;
+header nav {
+  flex: 1;
+  text-align: right;
 }
-.hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    position: relative;
+header nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.3s;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+header nav a:hover {
+  color: #e65100;
 }
-.overlay h2 {
-    font-size: 24px;
-    color: #FFA500;
-    margin: 0;
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  flex: 1;
 }
-.overlay h1 {
-    font-size: 48px;
-    margin: 20px 0;
+
+/* HERO SECTION */
+.hero-img-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
-.buttons {
-    margin-top: 20px;
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.btn {
-    background-color: #FFA500;
-    color: #000;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bold;
+
+/* HERO BUTTONS */
+.hero-buttons {
+  text-align: center;
+  margin-top: -80px;
 }
+.hero-buttons a.btn {
+  background-color: #ff6f00;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.hero-buttons a.btn:hover {
+  background-color: #e65100;
+}
+
+/* TOURS SECTION */
+.tours {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+}
+.tours h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.tour-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.tour-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.tour-card p {
+  margin-bottom: 1rem;
+}
+.tour-card a {
+  display: inline-block;
+  background-color: #ff6f00;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* FOOTER */
 footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
 }
 footer a {
-    color: white;
-    margin: 0 10px;
+  color: #ff9800;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+footer .icons {
+  margin-top: 1rem;
+}
+footer .icons img {
+  height: 24px;
+  margin: 0 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .hero-buttons {
+    margin-top: -40px;
+  }
+  .tour-card {
+    margin: 1rem;
+  }
 }
