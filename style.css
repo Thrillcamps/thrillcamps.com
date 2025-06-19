@@ -70,3 +70,20 @@ footer a {
     color: white;
     margin: 0 10px;
 }
+
+.hero-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* Show full image without cropping */
+  max-height: 100vh;
+}
