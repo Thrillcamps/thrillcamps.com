@@ -38,6 +38,7 @@ header nav a {
   color: #111;
   font-weight: 500;
   transition: color 0.3s;
+<<<<<<< HEAD
 }
 header nav a:hover {
   color: #e65100;
@@ -88,6 +89,59 @@ header h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+=======
+}
+header nav a:hover {
+  color: #e65100;
+}
+header h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  flex: 1;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url("../img/hero_campsite.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+}
+.hero .buttons {
+  margin-bottom: 3rem;
+}
+.hero a.btn {
+  background-color: #ff6f00;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.hero a.btn:hover {
+  background-color: #e65100;
+}
+
+/* TOURS SECTION */
+.tours {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+}
+.tours h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+>>>>>>> c7c3e986276437597ecd234e7e0a847762a13291
 .tour-card {
   max-width: 600px;
   margin: 2rem auto;
@@ -141,8 +195,18 @@ footer .icons img {
     text-align: center;
     margin-top: 0.5rem;
   }
+<<<<<<< HEAD
   .hero-buttons {
     margin-top: -40px;
+=======
+  .hero {
+    background-size: cover;
+    padding: 1rem;
+  }
+  .hero a.btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+>>>>>>> c7c3e986276437597ecd234e7e0a847762a13291
   }
   .tour-card {
     margin: 1rem;
