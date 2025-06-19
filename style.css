@@ -1,16 +1,15 @@
 
-/* RESET + BASE STYLES */
+/* Core styling for Thrill Camps */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body, html {
+body {
   font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
   line-height: 1.6;
-  background-color: #ffffff;
-  color: #222;
+  background: #fff;
+  color: #333;
 }
 
 /* HEADER */
@@ -18,38 +17,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ffffff;
   padding: 1rem 2rem;
-  background-color: #fff;
   border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 header img {
-  height: 50px;
+  height: 60px;
+}
+header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
 }
 header nav {
   flex: 1;
   text-align: right;
 }
 header nav a {
-  margin-left: 2rem;
+  margin-left: 20px;
   text-decoration: none;
-  color: #111;
+  color: #333;
   font-weight: 500;
-  transition: color 0.3s;
-<<<<<<< HEAD
-}
-header nav a:hover {
-  color: #e65100;
-}
-header h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  flex: 1;
 }
 
-/* HERO SECTION */
+/* HERO IMAGE */
 .hero-img-wrapper {
   width: 100%;
   overflow: hidden;
@@ -66,92 +57,32 @@ header h1 {
   margin-top: -80px;
 }
 .hero-buttons a.btn {
-  background-color: #ff6f00;
+  background: #ff6f00;
   color: white;
-  text-decoration: none;
   padding: 0.75rem 1.5rem;
   margin: 0.5rem;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.hero-buttons a.btn:hover {
-  background-color: #e65100;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-/* TOURS SECTION */
+/* TOUR SECTION */
 .tours {
-  padding: 4rem 2rem;
-  background-color: #fafafa;
+  padding: 3rem 2rem;
+  background: #fafafa;
 }
 .tours h2 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 2rem;
 }
-=======
-}
-header nav a:hover {
-  color: #e65100;
-}
-header h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  flex: 1;
-}
-
-/* HERO SECTION */
-.hero {
-  background-image: url("../img/hero_campsite.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-color: #000;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 2rem;
-}
-.hero .buttons {
-  margin-bottom: 3rem;
-}
-.hero a.btn {
-  background-color: #ff6f00;
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  margin: 0.5rem;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-.hero a.btn:hover {
-  background-color: #e65100;
-}
-
-/* TOURS SECTION */
-.tours {
-  padding: 4rem 2rem;
-  background-color: #fafafa;
-}
-.tours h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
->>>>>>> c7c3e986276437597ecd234e7e0a847762a13291
 .tour-card {
   max-width: 600px;
-  margin: 2rem auto;
-  background: white;
+  margin: 1rem auto;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 .tour-card h3 {
-  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 .tour-card p {
@@ -159,31 +90,28 @@ header h1 {
 }
 .tour-card a {
   display: inline-block;
-  background-color: #ff6f00;
+  background: #ff6f00;
   color: white;
   padding: 0.5rem 1rem;
-  text-decoration: none;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 /* FOOTER */
 footer {
-  background-color: #333;
+  background: #222;
   color: #fff;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 footer a {
-  color: #ff9800;
+  color: #ffa726;
+  margin: 0 10px;
   text-decoration: none;
-  margin: 0 1rem;
-}
-footer .icons {
-  margin-top: 1rem;
 }
 footer .icons img {
   height: 24px;
-  margin: 0 0.5rem;
+  margin: 0 8px;
 }
 
 /* RESPONSIVE */
@@ -192,23 +120,7 @@ footer .icons img {
     flex-direction: column;
   }
   header nav {
+    margin-top: 10px;
     text-align: center;
-    margin-top: 0.5rem;
-  }
-<<<<<<< HEAD
-  .hero-buttons {
-    margin-top: -40px;
-=======
-  .hero {
-    background-size: cover;
-    padding: 1rem;
-  }
-  .hero a.btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
->>>>>>> c7c3e986276437597ecd234e7e0a847762a13291
-  }
-  .tour-card {
-    margin: 1rem;
   }
 }
